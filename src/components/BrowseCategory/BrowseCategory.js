@@ -3,27 +3,27 @@ import Image from "next/image";
 const categories = [
   {
     title: "True Crime",
-    image: "/categories/category-one.png",
+    image: "/Categories/category-one.png",
   },
   {
     title: "Business",
-    image: "/categories/category-two.png",
+    image: "/Categories/category-two.png",
   },
   {
     title: "Society & Culture",
-    image: "/categories/category-three.png",
+    image: "/Categories/category-three.png",
   },
   {
     title: "News",
-    image: "/categories/category-four.png",
+    image: "/Categories/category-four.png",
   },
   {
     title: "Health & Wellness",
-    image: "/categories/category-five.png",
+    image: "/Categories/category-five.png",
   },
   {
     title: "Comedy",
-    image: "/categories/category-six.png",
+    image: "/Categories/category-six.png",
   },
 ];
 
