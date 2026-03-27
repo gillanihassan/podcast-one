@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter  } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -10,6 +10,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: "--font-inter",
 });
 
 const aeonik = localFont({
@@ -37,7 +43,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${aeonik.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${aeonik.variable} ${inter.variable} antialiased`}
       >
         {children}
       </body>

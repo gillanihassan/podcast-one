@@ -1,34 +1,44 @@
 "use client";
 
+"use client";
+
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
 export default function TopSection() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isAboutSection, setIsAboutSection] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
-    const aboutEl = document.getElementById("about-section");
-    if (!aboutEl) return;
+    const handleScroll = () => {
+      const heroHeight = window.innerHeight;
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsAboutSection(entry.isIntersecting);
-      },
-      { threshold: 0.1 }
-    );
+      if (window.scrollY >= heroHeight) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
 
-    observer.observe(aboutEl);
-    return () => observer.disconnect();
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   // Dynamic color tokens
-  const navBg = isAboutSection ? "bg-[#FDF4E3]" : "bg-transparent";
-  const textColor = isAboutSection ? "text-[#350A32]" : "text-white";
-  const borderColor = isAboutSection ? "border-[#350A32]" : "border-white/60";
-  const iconColor = isAboutSection ? "text-[#350A32]" : "text-white/80";
-  const placeholderColor = isAboutSection ? "placeholder:text-[#350A32]" : "placeholder:text-white/80";
-  const logoSrc = isAboutSection ? "/about/logo.png" : "/TopSection/podcast-logo.png";
+  const navBg = isSticky ? "bg-[#FDF4E3]" : "bg-transparent";
+  const textColor = isSticky ? "text-[#350A32]" : "text-white";
+  const borderColor = isSticky ? "border-[#350A32]" : "border-white/60";
+  const iconColor = isSticky ? "text-[#350A32]" : "text-white/80";
+  const placeholderColor = isSticky
+    ? "placeholder:text-[#350A32]"
+    : "placeholder:text-white/80";
+
+  const logoSrc = isSticky
+    ? "/about/logo.png"
+    : "/TopSection/podcast-logo.png";
 
   return (
     <section className="relative w-full h-screen text-white overflow-hidden font-sans">
@@ -46,13 +56,13 @@ export default function TopSection() {
       </div>
 
       {/* Sticky Navbar */}
-      <header className={`fixed top-0 left-0 w-full flex items-center px-6 lg:px-12 py-6 z-50 transition-colors duration-300 ${navBg}`}>
+      <header className={`fixed top-0 left-0 w-full flex items-center px-6 lg:px-12 py-2 z-50 transition-colors duration-300 ${navBg}`}>
         {/* Logo */}
         <div className="flex-shrink-0">
           <Image
             src={logoSrc}
             alt="PodcastOne Logo"
-            width={174}
+            width={170}
             height={30}
             className="object-contain"
           />
@@ -78,7 +88,9 @@ export default function TopSection() {
             <input
               type="text"
               placeholder="Search shows, episodes..."
-              className={`bg-transparent border-none outline-none text-[13px] ml-2 w-full transition-colors duration-300 ${textColor} ${placeholderColor}`}
+              className={`bg-transparent border-none outline-none ml-2 w-full transition-colors duration-300 
+  font-normal tracking-normal text-[13px] sm:text-[14px] md:text-[14px] lg:text-[14px] xl:text-[15px] 
+  ${textColor} ${placeholderColor}`}
             />
           </div>
 

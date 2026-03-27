@@ -26,20 +26,20 @@ const data = [
 
 export default function TrendingLatest() {
   return (
-    <section className="bg-[#FDF4E3] py-16 sm:py-20 w-full flex justify-center">
+    <section className="bg-[#FDF4E3] w-full flex justify-center">
       <div className="w-full max-w-[1980px] px-2 lg:px-12">
         {/* Heading */}
-        <h2 className="font-aeonik font-bold text-[28px] sm:text-[36px] md:text-[44px] lg:text-[52px] xl:text-[60px] text-[#350A32] mb-5 md:mb-7
+        <h2 className="font-aeonik font-medium text-[28px] sm:text-[36px] md:text-[44px] lg:text-[52px] xl:text-[60px] text-[#350A32] mb-5 md:mb-7
  tracking-[-1%]">
           Trending & Latest
         </h2>
 
         {/* Cards Grid */}
-        <div className="flex flex-wrap gap-6 xl:gap-8 mt-10">
+        <div className="flex flex-wrap gap-6 xl:gap-3 mt-10">
           {data.map((item, index) => (
             <div
               key={index}
-              className="flex bg-[#0B0F19] rounded-[24px] overflow-hidden w-full max-w-[660px] h-auto sm:h-[280px]"
+              className="flex bg-[#0B0F19] rounded-[24px] overflow-hidden w-full max-w-[850px] h-auto sm:h-[280px]"
             >
               {/* LEFT COLUMN */}
               <div className="w-[100%] lg:w-[35%] relative min-h-[160px]">
@@ -74,8 +74,7 @@ export default function TrendingLatest() {
                 {/* Bottom icons */}
                 <div className="flex justify-between items-end mt-4 sm:mt-6">
                   <Bookmark
-                    className="text-[#A3A3A3] cursor-pointer hover:text-white transition-colors"
-                    size={26}
+                    className="text-[#FFFFFF]/64 cursor-pointer hover:text-white transition-colors w-[26px] h-[32px] sm:w-[28px] sm:h-[28px]"
                   />
 
                   <button className="bg-[#FF3C3C] hover:bg-red-500 transition-colors w-[46px] h-[46px] sm:w-[54px] sm:h-[54px] flex items-center justify-center rounded-full">

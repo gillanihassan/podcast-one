@@ -35,23 +35,23 @@ const episodes = [
 export default function LatestEpisodes() {
   return (
     <section className="bg-[#FDF4E3] w-full flex justify-center overflow-hidden">
-      <div className="w-full max-w-[1440px]">
+      <div className="w-full max-w-[1940px]">
         {/* Heading Container */}
-        <div className="px-6 lg:px-12 mb-7 lg:mb-7">
+        <div className="px-2 lg:px-12 mb-7 lg:mb-7">
           <h2 className="font-aeonik font-medium text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[40px] text-[#350A32] tracking-[-1%]" >
             Most Popular Episodes
           </h2>
         </div>
 
         {/* Cards Grid */}
-        <div className="px-6 lg:px-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 justify-center">
+        <div className="px-4 lg:px-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-5 justify-center">
           {episodes.map((ep, index) => (
             <div
               key={index}
-              className="bg-[#0B0F19] rounded-[16px] xl:rounded-[20px] overflow-hidden flex flex-col group cursor-pointer shadow-sm w-full min-h-[416px]"
+              className="bg-[#0B0F19] rounded-[18px] xl:rounded-[18px] overflow-hidden flex flex-col group cursor-pointer shadow-sm w-full min-h-[516px]"
             >
               {/* Image */}
-              <div className="relative w-full h-[214px] overflow-hidden">
+              <div className="relative w-full h-[314px] overflow-hidden">
                 <Image
                   src={ep.image}
                   alt={ep.title}

@@ -33,7 +33,7 @@ export default function BrowseCategory() {
       <div className="w-full max-w-[1980px]">
 
         {/* Heading Container */}
-        <div className="px-6 lg:px-12 mb-8 lg:mb-12 border-none">
+        <div className="px-6 lg:px-12 mb-8 lg:mb-9 border-none">
           <h2 className="font-aeonik font-medium text-[28px] sm:text-[26px] md:text-[36px] lg:text-[40px] xl:text-[40px] text-[#350A32] tracking-tight">
             Browse by Category
           </h2>
@@ -57,7 +57,7 @@ export default function BrowseCategory() {
               <div className="absolute inset-x-0 bottom-0 h-[60%] bg-gradient-to-t from-black/80 via-black/30 to-transparent pointer-events-none"></div>
 
               {/* Text */}
-              <div className="absolute bottom-5 left-5 sm:bottom-6 sm:left-6 lg:bottom-8 lg:left-8 text-white font-aeonik font-medium text-[20px] sm:text-[24px] lg:text-[35px] tracking-[-1%]">
+              <div className="absolute bottom-5 left-5 sm:bottom-6 sm:left-6 lg:bottom-8 lg:left-8 text-[#FFFFFF] font-aeonik font-medium text-[20px] sm:text-[24px] lg:text-[35px] tracking-[-1%]">
                 {item.title}
               </div>
             </div>

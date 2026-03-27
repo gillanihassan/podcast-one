@@ -10,15 +10,15 @@ export default function Logo() {
   ];
 
   return (
-    <section className="bg-[#FDF4E3] py-16">
-      <div className="max-w-6xl mx-auto px-8">
+    <section className="bg-[#FDF4E3] py-25">
+      <div className="o px-8">
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
 
           {platforms.map((item, index) => (
             <div
               key={index}
-              className="bg-[#EAE3D8] rounded-2xl h-[180px] sm:h-[200px] xl:h-[220px] flex items-center justify-center hover:scale-105 transition-transform duration-200"
+              className="bg-[#350A3212] rounded-2xl h-[180px] sm:h-[200px] xl:h-[420px] flex items-center justify-center hover:scale-105 transition-transform duration-200 cursor-pointer"
             >
               <Image
                 src={item.img}
