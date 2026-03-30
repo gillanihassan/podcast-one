@@ -47,7 +47,7 @@ export default function Footer() {
       </div>
 
       {/* Large Logo */}
-      <div className="w-full mt-40 overflow-hidden flex justify-center px-4 md:px-0">
+      <div className="w-full mt-40 overflow-hidden flex justify-center px-12 md:px-0">
         <Image
           src="/footer/footer-logo.png"
           alt="podcastone"

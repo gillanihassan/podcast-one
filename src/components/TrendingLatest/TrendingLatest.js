@@ -27,7 +27,7 @@ const data = [
 export default function TrendingLatest() {
   return (
     <section className="bg-[#FDF4E3] w-full flex justify-center">
-      <div className="w-full max-w-[1980px] px-2 lg:px-12">
+      <div className="w-full max-w-[1980px] px-4 lg:px-12">
         {/* Heading */}
         <h2 className="font-aeonik font-medium text-[28px] sm:text-[36px] md:text-[44px] lg:text-[52px] xl:text-[60px] text-[#350A32] mb-5 md:mb-7
  tracking-[-1%]">
