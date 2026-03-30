@@ -31,10 +31,15 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Your email"
-                className="bg-transparent outline-none w-full text-white footer-email-input"
+                className="bg-transparent outline-none w-full text-[#F2B2EC] footer-email-input"
                 style={{ fontSize: "38px", fontWeight: 400 }}
               />
-              <button className="text-2xl ml-4 hover:opacity-70 transition-opacity">→</button>
+              <Image
+                src="/footer/footer-sider.png"
+                alt="podcastone"
+                width={34}
+                height={34}
+              />
             </div>
           </div>
 

@@ -21,8 +21,8 @@ export default function PodcastSection() {
   ];
 
   return (
-    <section className="bg-[#FDF4E3] px-4 lg:px-12  w-full max-w-[1980px] py-8 ">
-      <div className="w-full max-w-[1120px] bg-[#FDF4E3]">
+    <section className="bg-[#FDF4E3] px-2 lg:px-12  w-full max-w-[1980px] py-8" >
+      <div className="px-2 lg:px-12 w-full max-w-[1170px] bg-[#FDF4E3]">
 
         {podcastData.map((item, index) => (
           <div key={index} className="grid md:grid-cols-2 gap-10 items-center mb-10 mt-23">
