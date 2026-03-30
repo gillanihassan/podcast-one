@@ -21,12 +21,12 @@ export default function PodcastSection() {
   ];
 
   return (
-    <section className="bg-[#FDF4E3] px-2 lg:px-12  w-full max-w-[1980px] py-8" >
+    <section className="bg-[#FDF4E3] px-4 lg:px-12  w-full max-w-[1980px] py-8" >
       <div className="px-2 lg:px-12 w-full max-w-[1170px] bg-[#FDF4E3]">
 
         {podcastData.map((item, index) => (
           <div key={index} className="grid md:grid-cols-2 gap-10 items-center mb-10 mt-23">
-            
+
             {/* Image */}
             <div className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[430px] xl:w-[522px] xl:h-[481px] rounded-[21px] overflow-hidden">
               <Image

@@ -30,7 +30,7 @@ const categories = [
 export default function BrowseCategory() {
   return (
     <section className="bg-[#FDF4E3] py-12 sm:py-20 w-full flex justify-center overflow-hidden">
-      <div className="w-full max-w-[1980px] px-2 md:px-0">
+      <div className="w-full max-w-[1980px] px-4 md:px-0">
 
         {/* Heading Container */}
         <div className="px-6 lg:px-12 mb-8 lg:mb-9 border-none">

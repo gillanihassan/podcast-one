@@ -8,7 +8,7 @@ export default function AboutSection() {
       id="about-section"
       className="relative w-full min-h-[100px] md:min-h-screen bg-[#FDF4E3] font-sans flex flex-col items-center"
     >
-      <div className="w-full max-w-[1980px] px-4 lg:px-12 flex-grow flex flex-col justify-center pb-24 lg:pb-32 pt-12 lg:pt-8 mt-4">
+      <div className="w-full max-w-[1980px] px-8 lg:px-12 flex-grow flex flex-col justify-center pb-24 lg:pb-32 pt-12 lg:pt-8 mt-4">
         {/* Main Text */}
         <div className="max-w-[1100px]">
           <h1 className="font-aeonik text-[28px] sm:text-[36px] md:text-[44px] lg:text-[52px] xl:text-[60px] font-medium leading-[150%] sm:leading-[110%] tracking-[-0.02em] text-[#350A32]">

@@ -11,7 +11,7 @@ export default function Logo() {
 
   return (
     <section className="bg-[#FDF4E3] py-25">
-      <div className="px-4 lg:px-20">
+      <div className="px-6 lg:px-20">
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
 

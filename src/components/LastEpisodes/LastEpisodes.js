@@ -34,7 +34,7 @@ const episodes = [
 
 export default function LatestEpisodes() {
   return (
-    <section className="bg-[#FDF4E3] py-8 px-2 lg:px-12 w-full flex justify-center overflow-hidden">
+    <section className="bg-[#FDF4E3] py-8 px-4 lg:px-12 w-full flex justify-center overflow-hidden">
       <div className="w-full max-w-[1940px]">
         {/* Heading Container */}
         <div className="px-2 lg:px-12 mb-7 lg:mb-7">
